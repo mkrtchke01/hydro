@@ -5,7 +5,7 @@ const common = {
     ["solutions", "Решения"],
     ["cases", "Кейсы"],
     ["faq", "FAQ"]
-  ],
+  ] as [string, string][],
   production: {
     kicker: "Собственное производство",
     title: "Контролируем решение от проектирования до запуска",
@@ -247,3 +247,5 @@ export const pages = {
 };
 
 export { common };
+
+export type PageKey = keyof typeof pages;
